@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Bookmark Manager",
+  "version": "1.0",
+  "description": "Manage and display bookmarks in a custom UI",
+  "permissions": ["bookmarks","storage","activeTab" ],
+  "action": {
+      "default_popup": "html/popup.html",
+      "default_icon": "/assets/research-oracle.png"
+  },
+  "background": {
+      "service_worker": "js/background.js"
+  },
+  "web_accessible_resources": [
+      {
+        "resources": ["html/index.html", "js/index.js", "css/style.css", "js/database.js", "js/bookmarks.js", "js/sync.js"],
+        "matches": ["<all_urls>"]
+      }
+  ]
+}
