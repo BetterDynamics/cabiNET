@@ -5,37 +5,53 @@
     grid-template-columns: auto; /* Single column for header, custom layout for second row */
     height: 100vh;
 }
-
 /* First row (Header with logo and search) */
 .header {
     display: flex;
     justify-content: space-between;
+    position: relative;
     align-items: center;
     background-color: #121826; /* Dark background */
     color: white;
     padding: 10px 20px;
 }
-/* Custom Search Bar styles */
-.search-bar-form {
-    width: 100%;
-    max-width: 300px; /* Set a max width for the search bar */
-    margin-left: auto; /* Align search bar to the right */
+.logo{
+    margin-right: auto;
 }
 
-.search-bar {
-    background-color: #252B37; /* Custom background color */
-    border: 0px solid #ced4da; /* Custom border color */
-    color: #B9B9B9; /* Text color */
+.search-container {
+    display: flex;
+    position: relative; 
+    width: 100%;
+    justify-content: center;
+}
+
+.search-bar-form {
     padding: 0.375rem 0.75rem; /* Padding inside the input */
     border-radius: 0.25rem; /* Rounded corners */
-    width: 100%; /* Full width search bar */
-    max-width: 800px; /* Maximum width for search bar */
+    width: 500px; /* Full width search bar */
+    max-width: 100%;
 }
-
+.form-control{
+    color: #B9B9B9; /* Text color */
+    background-color: #252B37;
+    border-width: 0px;
+}
+.input-group .form-control {
+    color: #B9B9B9;
+}
+.input-group .form-control::placeholder {
+    color: #B9B9B9;
+}
+.input-group .form-control:focus {
+    color: white; /* Change text color when the input is focused */
+    background-color: #252B37; /* Keep background color when focused */
+    outline: none; /* Remove the blue outline on focus */
+}
 /* Second row (Resizable columns) */
 .main-content {
     display: grid;
-    grid-template-columns: 200px 250px 1fr 350px; /* Columns with resizers in between */
+    grid-template-columns: 50px 250px 1fr 350px; /* Columns with resizers in between */
     grid-auto-rows: 1fr; /* Ensure columns take full height */
     height: 100%;
     overflow: hidden;
@@ -53,13 +69,49 @@
     background-color: #F9FAFC;
     color: white;
     border-right: 1px solid #AEAEAE;
+    align-items: center;
+}
+.nav-icon{
+    width: 30px;
+    border: #BBBBBB solid 1px;
+    border-radius: 5px;
+    padding: 5px;
+    
+}
+.nav-icon.bookmark{
+    height: 32px;
+}
+.nav-icon:active{
+    background-color: #121826;
+}
+.nav-bar a{
+    display: block;
+    flex-direction: column; /* Ensures that elements stack vertically */
+    justify-content: center; /* Centers the items vertically */
+    align-items: center; /* Centers the items horizontally */
+   
+}
+.nav-menu{
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Space between the icons */
 }
 
+/*Sub navigation styling*/
 .sub-nav-bar {
     background-color: #F9FAFC;
-    color: #121826;
+    color: #222530;
 }
-
+.sub-nav-header{
+    color: #81858B;
+    font-weight: bold;
+    font-size: 12px;
+}
+.sub-nav-tree{
+    font-weight: 600;
+    font-size: 16px;
+    
+}
 .content-pane {
     background-color: white;
     color:#121826
@@ -74,4 +126,7 @@
 .grid-container > .main-content > .column {
     display: flex;
     flex-direction: column;
+}
+body{
+    font-family: poppins;
 }
