@@ -31,6 +31,7 @@
     border-radius: 0.25rem; /* Rounded corners */
     width: 500px; /* Full width search bar */
     max-width: 100%;
+    font-family: Roboto
 }
 .form-control{
     color: #B9B9B9; /* Text color */
@@ -116,13 +117,12 @@
 .content-pane {
     background-color: white;
     color:#121826;
-    font-family: Roboto;
 }
 
 .sidebar {
     background-color: white;
     box-shadow: -5px 0px 22px rgba(0, 0, 0, 0.08);
-    font-family: Roboto;
+    
 }
 
 /* Ensuring consistent height */
@@ -131,5 +131,5 @@
     flex-direction: column;
 }
 body{
-    font-family: poppins;
+    font-family: Roboto;
 }
