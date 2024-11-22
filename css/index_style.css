@@ -70,13 +70,14 @@
     color: white;
     border-right: 1px solid #AEAEAE;
     align-items: center;
+    
 }
 .nav-icon{
     width: 30px;
     border: #BBBBBB solid 1px;
     border-radius: 5px;
     padding: 5px;
-    
+    border: none;
 }
 .nav-icon.bookmark{
     height: 32px;
@@ -114,12 +115,14 @@
 }
 .content-pane {
     background-color: white;
-    color:#121826
+    color:#121826;
+    font-family: Roboto;
 }
 
 .sidebar {
     background-color: white;
     box-shadow: -5px 0px 22px rgba(0, 0, 0, 0.08);
+    font-family: Roboto;
 }
 
 /* Ensuring consistent height */
