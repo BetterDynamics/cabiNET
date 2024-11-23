@@ -1,15 +1,15 @@
 {
   "manifest_version": 3,
-  "name": "Bookmark Manager",
+  "name": "CabiNET",
   "version": "1.0",
   "description": "Manage and display bookmarks in a custom UI",
   "permissions": ["bookmarks","storage","activeTab" ],
   "action": {
-      "default_popup": "html/popup.html",
-      "default_icon": "/assets/research-oracle.png"
+      "default_popup": "html/index.html",
+      "default_icon": "/assets/logo.png"
   },
   "background": {
-      "service_worker": "js/background.js"
+      "service_worker": "js/app.js"
   },
   "web_accessible_resources": [
       {
