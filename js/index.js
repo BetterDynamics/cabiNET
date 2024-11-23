@@ -1,12 +1,14 @@
+
 const bookmarksFilePath = "bookmarks_10_2_24.html"
-const bookmarkDB = "BookmarksDB";
+const cabDB = "CabinetDB";
 const storeName = "bookmarks";
+let db;
 
 function initDB() {
-    const request = indexedDB.open(bookmarkDB, 4);
+    const request = indexedDB.open(cabDB, 4);
 
-    request.onupgradeneeded = function(event) {
-        const db = event.target.result;
+    request.onupgradeneeded = (event) => {
+        db = event.target.result;
         // Create an object store for the bookmarks with a keyPath
         if (!db.objectStoreNames.contains(storeName)) {
             db.createObjectStore(storeName, { keyPath: 'id', autoIncrement: true });
@@ -69,7 +71,7 @@ function storeBookmarks(bookmarks) {
     const request = indexedDB.open(bookmarkDB, 4);
 
     request.onsuccess = function(event) {
-        const db = event.target.result;
+        db = event.target.result;
         const transaction = db.transaction(storeName, 'readwrite');
         const store = transaction.objectStore(storeName);
 
