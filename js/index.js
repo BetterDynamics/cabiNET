@@ -1,4 +1,5 @@
-
+const form = document.querySelector('form');
+const bookmark = document.querySelector('#bookmark');
 const bookmarksFilePath = "bookmarks_10_2_24.html"
 const cabDB = "CabinetDB";
 const storeName = "bookmarks";
