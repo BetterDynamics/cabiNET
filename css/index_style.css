@@ -31,7 +31,7 @@
     border-radius: 0.25rem; /* Rounded corners */
     width: 500px; /* Full width search bar */
     max-width: 100%;
-    font-family: Roboto
+    font-family: Roboto;
 }
 .form-control{
     color: #B9B9B9; /* Text color */
@@ -56,6 +56,8 @@
     grid-auto-rows: 1fr; /* Ensure columns take full height */
     height: 100%;
     overflow: hidden;
+    font-family: Roboto;
+
 }
 
 .column {
