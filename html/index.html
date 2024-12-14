@@ -46,10 +46,10 @@
             <!-- Column 1: Main navigation -->
             <div class="column nav-bar">
                 <div class="nav-menu">
-                    <a href="#home"><img src="../assets/home.png" class="nav-icon" title="Home"></a>
-                    <a href="#bookmark"><img src="../assets/bookmark.png" class="nav-icon" title="Bookmarks"></a>
-                    <a href="#notes"><img src="../assets/notes.png" class="nav-icon" title="Notes"></a>
-                    <a href="#projects"><img src="../assets/projects.png" class="nav-icon" title="Projects"></a>
+                    <a href="#home"><img src="../assets/home.png" class="nav-icon" title="Home" data-page="home"></a>
+                    <a href="#bookmark"><img src="../assets/bookmark.png" class="nav-icon" title="Bookmarks" data-page="bookmarks"></a>
+                    <a href="#notes"><img src="../assets/notes.png" class="nav-icon" title="Notes" data-page="notes"></a>
+                    <a href="#projects"><img src="../assets/projects.png" class="nav-icon" title="Projects" data-page="projects"></a>
                 </div>
                 <div class="sub-nav-menu">
                     <!--<a href="https://www.freepik.com/icon/agenda_15647313#fromView=search&page=1&position=20&uuid=b0bfd8ae-6357-4432-9c3c-0ccde2adbef2">Icon by improstudio</a>-->
@@ -65,26 +65,33 @@
                     <h5>Home</h5>
                     <p>This is your home page</p>
                 </div>
+                <div id="bookmarks" class="page-content">
+                    <h5>Bookmarks</h5>
+                    <ul class="sub-nav-tree">
+                        <li>All Bookmarks</li>
+                        <li>
+                            <img src="../assets/folder.png" class="nav-icon">
+                            <span>Architecture</span>
+                        </li>
+                        <li>
+                            <img src="../assets/folder.png" class="nav-icon">
+                            <span>Design</span>
+                        </li>
+                        <li>
+                            <img src="../assets/folder.png" class="nav-icon">
+                            <span>Development</span>
+                        </li>
+                    </ul>
+                </div>
                 <div id="notes" class="page-content">
                     <h5>Notes</h5>
-                        <p>All Notes</p>
+                    <img src="../assets/quick-notes.png" class="nav-icon">
+                    <span>All Notes</span>
                 </div>
-                <h5 class="sub-nav-header">Bookmarks</h4>
-                <ul class="sub-nav-tree">
-                    <li>All Bookmarks</li>
-                    <li>
-                        <img src="../assets/folder.png" class="nav-icon">
-                        <span>Architecture</span>
-                    </li>
-                    <li>
-                        <img src="../assets/folder.png" class="nav-icon">
-                        <span>Design</span>
-                    </li>
-                    <li>
-                        <img src="../assets/folder.png" class="nav-icon">
-                        <span>Development</span>
-                    </li>
-                </ul>
+                <div id="projects" class="page-content">
+                    <h5>Projects</h5>
+                    <p>Projects you are working on</p>
+                </div>
             </div>
 
             <!-- Column 3: Content pane (Summary and highlights) -->
