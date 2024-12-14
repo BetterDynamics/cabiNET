@@ -27,6 +27,18 @@
                     </div>
                 </form>
             </div>
+            <div class="profile-dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    <!--<a href="https://www.freepik.com/search">Icon by Shahzaib Ahmad</a>-->
+                    <img src="../assets/profile.png" class="profile-icon">
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+                
+            </div>
         </div>
 
         <!-- Second Row: Main content (4 columns, 3 resizable) -->
@@ -39,21 +51,47 @@
                     <a href="#notes"><img src="../assets/notes.png" class="nav-icon" title="Notes"></a>
                     <a href="#projects"><img src="../assets/projects.png" class="nav-icon" title="Projects"></a>
                 </div>
+                <div class="sub-nav-menu">
+                    <!--<a href="https://www.freepik.com/icon/agenda_15647313#fromView=search&page=1&position=20&uuid=b0bfd8ae-6357-4432-9c3c-0ccde2adbef2">Icon by improstudio</a>-->
+                    <a href="#calendar"><img src="../assets/calendar.png" class="nav-icon" title="Calendar"></a>
+                    <!--<a href="https://www.freepik.com/search">Icon by Freepik</a>__-->
+                    <a href="#help"><img src="../assets/help.png" class="nav-icon" title="Help"></a>
+                </div>
             </div>
 
             <!-- Column 2: Sub-navigation (Bookmark structure, etc.) -->
-            <div class="column sub-nav-bar">
-                <h5 class="sub-nav-header">BOOKMARKS</h4>
+            <div class="sub-nav-bar">
+                <div id="home" class="page-content active">
+                    <h5>Home</h5>
+                    <p>This is your home page</p>
+                </div>
+                <div id="notes" class="page-content">
+                    <h5>Notes</h5>
+                        <p>All Notes</p>
+                </div>
+                <h5 class="sub-nav-header">Bookmarks</h4>
                 <ul class="sub-nav-tree">
-                    <li>All bookmarks</li>
+                    <li>All Bookmarks</li>
+                    <li>
+                        <img src="../assets/folder.png" class="nav-icon">
+                        <span>Architecture</span>
+                    </li>
+                    <li>
+                        <img src="../assets/folder.png" class="nav-icon">
+                        <span>Design</span>
+                    </li>
+                    <li>
+                        <img src="../assets/folder.png" class="nav-icon">
+                        <span>Development</span>
+                    </li>
                 </ul>
-
             </div>
 
             <!-- Column 3: Content pane (Summary and highlights) -->
             <div class="column content-pane">
                 <h2>Content Pane</h2>
-                <p>Here is where the selected bookmark content and highlights will go.</p>
+                <p>Summary and highlights of the selected item.</p>
+
             </div>
 
             <!-- Column 4: Sidebar (Comments on highlights) -->
@@ -66,6 +104,5 @@
 
     <script src="../js/index.js"></script>
     <script src="../js/app.js"></script>
-    <script src="../assets/bootstrap/bootstrap.min.js"></script>
 </body>
 </html>

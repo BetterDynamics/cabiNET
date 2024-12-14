@@ -29,5 +29,20 @@ class App {
             initialNavIcon.classList.add('active');
         }
 
+        document.querySelectorAll('.nav-menu').forEach(item => {
+            item.addEventListener('click', (e) => {
+                e.stopPropagation();
+                
+                if (item.querySelector('.nested')) {
+                    item.classList.toggle('expanded');
+                }
+
+                document.querySelectorAll('.sub-nav-tree li').forEach(li => {
+                    li.classList.remove('active');
+            });
+            item.classList.add('active');
+        });
+    });
+
     }
 }

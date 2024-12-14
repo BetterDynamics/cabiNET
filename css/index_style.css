@@ -64,7 +64,8 @@
     padding: 20px;
     overflow-y: auto;
     background-color: #f8f9fa; /* Light gray for contrast */
-    height: 100%; /* Make sure each column stretches fully */
+    height: 100%;
+     /* Make sure each column stretches fully */
 }
 
 /* Styling for individual columns */
@@ -74,6 +75,13 @@
     border-right: 1px solid #AEAEAE;
     align-items: center;
     
+}
+
+.profile-icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 30%;
+    margin-bottom: 10px;
 }
 .nav-icon{
     width: 30px;
@@ -93,7 +101,6 @@
     flex-direction: column; /* Ensures that elements stack vertically */
     justify-content: center; /* Centers the items vertically */
     align-items: center; /* Centers the items horizontally */
-   
 }
 .nav-menu{
     display: flex;
@@ -101,10 +108,19 @@
     gap: 20px; /* Space between the icons */
 }
 
+.sub-nav-menu{
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+    margin-top: 50px;
+}
+
 /*Sub navigation styling*/
 .sub-nav-bar {
     background-color: #F9FAFC;
     color: #222530;
+    margin-top: 20px;
+    margin-left: 10px;
 }
 .sub-nav-header{
     color: #81858B;
@@ -115,6 +131,10 @@
     font-weight: 600;
     font-size: 16px;
     
+}
+
+.sub-nav-icon {
+    width: 20px;
 }
 .content-pane {
     background-color: white;
