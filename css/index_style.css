@@ -19,6 +19,13 @@
     margin-right: auto;
 }
 
+.docs-icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 30%;
+    margin-right: 100px;
+}
+
 .search-container {
     display: flex;
     position: relative; 
@@ -96,6 +103,15 @@
 .nav-icon:active{
     background-color: #121826;
 }
+
+.page-content {
+    display:none
+}
+
+.page-content.active {
+    display: block;
+}
+
 .nav-bar a{
     display: block;
     flex-direction: column; /* Ensures that elements stack vertically */
