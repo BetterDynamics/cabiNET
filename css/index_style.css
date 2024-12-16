@@ -90,6 +90,23 @@
     border-radius: 30%;
     margin-bottom: 10px;
 }
+
+.profile-icon .dropdown-menu{
+    min-width:200px;
+    padding:10px;
+    border-radius: 5px;
+}
+
+.dropdown-item{
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover{
+    background-color: #F9FAFC;
+}
+
+
 .nav-icon{
     width: 30px;
     border: #BBBBBB solid 1px;

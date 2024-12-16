@@ -27,3 +27,6 @@ window.addEventListener('popstate', () => {
 
 
 window.dispatchEvent(new Event('popstate'));
+
+console.log("Current Page ID: ", pageID);
+console.log("All Pages: ", pages);
