@@ -1,4 +1,4 @@
-// Simulate user state (Replace this with real authentication later)
+
 let isAuthenticated = false;
 
 // Elements
