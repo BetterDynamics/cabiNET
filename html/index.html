@@ -7,6 +7,8 @@
     <link href="../assets/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="../css/index_style.css" rel="stylesheet">
+    <link href="../css/calendar.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
 </head>
 <body>
     <div class="grid-container">
@@ -72,9 +74,9 @@
                 </div>
                 <div class="sub-nav-menu">
                     <!--<a href="https://www.freepik.com/icon/agenda_15647313#fromView=search&page=1&position=20&uuid=b0bfd8ae-6357-4432-9c3c-0ccde2adbef2">Icon by improstudio</a>-->
-                    <a href="#calendar"><img src="../assets/calendar.png" class="nav-icon" title="Calendar"></a>
+                    <a href="#calendar"><img src="../assets/calendar.png" class="nav-icon" title="Calendar" data-page="calendar"></a>
                     <!--<a href="https://www.freepik.com/search">Icon by Freepik</a>__-->
-                    <a href="#help"><img src="../assets/help.png" class="nav-icon" title="Help"></a>
+                    <a href="#help"><img src="../assets/help.png" class="nav-icon" title="Help" data-page="help"></a>
                 </div>
             </div>
 
@@ -130,33 +132,36 @@
                 <div id="calendar" class="page-content">
                     <h5>Calendar</h5>
                     <p>Calendar view of your schedule</p>
+                </div>
             </div>
 
             <!-- Column 3: Content pane (Summary and highlights) -->
-            <div id ="calendar" class="page-content">
-                <h2>Calendar</h2>
-                <div class="calendar">
-                    <div class="calendar-header">
-                        <button class="btn btn-secondary" id="prev-month">Previous</button>
-                        <h3 id="month-year">Month Year</h3>
-                        <button class="btn btn-secondary" id="next-month">Next</button>
-                    </div>
+            <div class="content-pane">
+                <div id ="calendar-content" class="page-content active">
+                    <header class="calendar-header">
+                        <p class="calendar-current-day"></p>
+                        <div class="calendar-nav">
+                            <span id="caldendar-prev" class="material-symbols-rounded">chevron_left</span>
+                            <span id="caldendar-next" class="material-symbols-rounded">chevron_right</span>
+                        </div>   
+                    </header>
                     <div class="calendar-body">
-                        <div class="calendar-weekdays">
-                            <div>Sun</div>
-                            <div>Mon</div>
-                            <div>Tue</div>
-                            <div>Wed</div>
-                            <div>Thu</div>
-                            <div>Fri</div>
-                            <div>Sat</div>
-                        </div>
-                        <div class="calendar-days">
-                            <!-- Days of the month will be inserted here -->
-                        </div>
+                        <ul class="calendar-weekdays">
+                            <li>Sun</li>
+                            <li>Mon</li>
+                            <li>Tue</li>
+                            <li>Wed</li>
+                            <li>Thu</li>
+                            <li>Fri</li>
+                            <li>Sat</li>
+                        </ul>
+                        <ul class="calendar-days">
+            
+                        </ul>
                     </div>
                 </div>
             </div>
+
 
             <!-- Column 4: Sidebar (Comments on highlights) -->
             <div class="page-content">
@@ -171,5 +176,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/login.js"></script>
+    <script src="../js/calendar.js"></script>
 </body>
 </html>

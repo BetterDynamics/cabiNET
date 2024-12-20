@@ -7,6 +7,12 @@ function updateActivePage(pageId) {
     pages.forEach(page => {
         page.classList.toggle('active', page.id === pageId);
     });
+
+    if (pageId === 'calendar') {
+        document.querySelector('#calendar-content').classList.add('active');
+    } else {
+        document.querySelector('#calendar-content').classList.remove('active');
+    }
 }
 
         // Add click event listener to each nav icon

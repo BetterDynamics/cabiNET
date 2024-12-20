@@ -1,0 +1,43 @@
+.content-pane header {
+    display: flex;
+    align-items: center;
+    padding: 25px 30px 10px;
+    justify-content: space-between;
+}
+
+header .calendar-nav {
+    display: flex;
+}
+
+header .calendar-nav span {
+    height: 38px;
+    width: 38px;
+    margin: 0 1px;
+    cursor: pointer;
+    line-height: 38px;
+    border-radius: 50%;
+    user-select: none;
+    color: #aeabab;
+    font-size: 1.9rem;
+}
+
+.calendar-nav span:last-child {
+    margin-right: -10px;
+}
+
+header .calendar-nav span:hover {
+    background:  #f2f2f2;
+}
+
+header .calendar-current-day {
+    font-weight: 500;
+    font-size: 1.45rem;
+}
+
+.calendar-body ul {
+    list-style: none;
+    flex-wrap: wrap;
+    display: flex;
+    text-align: center;
+}
+
