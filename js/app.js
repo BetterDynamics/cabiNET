@@ -3,6 +3,7 @@
 const navIcons = document.querySelectorAll('.nav-icon');
 const pages = document.querySelectorAll('.page-content');
 
+
 function updateActivePage(pageId) {
     pages.forEach(page => {
         page.classList.toggle('active', page.id === pageId);
@@ -13,6 +14,14 @@ function updateActivePage(pageId) {
     } else {
         document.querySelector('#calendar-content').classList.remove('active');
     }
+
+    if (pageId === 'bookmark') {
+        document.querySelector('#bookmark-content').classList.add('active');
+    } else {
+        document.querySelector('#bookmark-content').classList.remove('active');
+    }
+
+    document.querySelector('#bookmark-content').classList.toggle('active', pageId === 'bookmarks');
 }
 
         // Add click event listener to each nav icon

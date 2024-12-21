@@ -44,8 +44,8 @@ const manipulate = () => {
     // Add current month days
     for (let i = 1; i <= lastDate; i++) {
         let isToday = i === date.getDate() && 
-                      month === new Date().getMonth() && 
-                      year === new Date().getFullYear() ? "active" : "";
+                month === new Date().getMonth() && 
+                year === new Date().getFullYear() ? "active" : "";
         lit += `<li class="${isToday}">${i}</li>`;
     }
 
