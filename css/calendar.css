@@ -41,3 +41,52 @@ header .calendar-current-day {
     text-align: center;
 }
 
+.calendar-body .calendar-days {
+    margin-bottom: 20px;
+}
+
+.calendar-body li {
+    width: calc(100% / 7);
+    font-size: 1.07rem;
+    color: #414141;
+}
+
+.calendar-body .calendar-weekdays li {
+    cursor: default;
+    font-weight: 500;
+}
+
+.calendar-body .calendar-days li {
+    margin-top: 30px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.calendar-days li.inactive {
+    color: #aaa;
+}
+
+.calendar-days li.active {
+    color: #fff;
+}
+
+.calendar-days li::before {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.calendar-days li.active::before {
+    background: #6332c5;
+}
+
+.calendar-days li:not(.active):hover::before {
+    background: #e4e1e1;
+}
