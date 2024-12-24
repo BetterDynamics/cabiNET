@@ -22,6 +22,14 @@ function updateActivePage(pageId) {
     }
 
     document.querySelector('#bookmark-content').classList.toggle('active', pageId === 'bookmarks');
+    document.querySelector('#folder').classList.toggle('active', pageId === 'folder');
+
+    if (pageId === 'folder') {
+        document.querySelector('#bookmarks').classList.add('active') && document.querySelector('#folder').classList.add('active');
+    }
+    else {
+        document.querySelector('#bookmarks').classList.remove('active') && document.querySelector('#folder').classList.remove('active');
+    }
 }
 
         // Add click event listener to each nav icon
