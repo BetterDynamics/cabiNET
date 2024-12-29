@@ -31,6 +31,30 @@ body{
     position: relative;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+    padding: 4px 8px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.docs-items {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 20px;
+}
+#doc-nav:hover{
+    background-color: lightblue;
+}
+
+#folder-nav:hover{
+    background-color: lightblue;
+}
+
 @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
 
 * {
