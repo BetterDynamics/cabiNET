@@ -1,4 +1,8 @@
 /* Main Grid Container */
+body{
+    font-family: Roboto;
+}
+
 .grid-container {
     display: grid;
     grid-template-rows: auto 1fr; /* First row auto-height (logo), second row takes remaining space */
@@ -26,6 +30,49 @@
     margin-right: 100px;
     position: relative;
 }
+
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", roboto;
+    --shadow: rgba(0, 0, 0, 0.5) 0px 6px 10px 0px;
+        rgba(0, 0, 0, 0.01) 0px 1px 1px 0px;
+    --color: lightblue;
+    --gap: 0.5rem;
+    --radius: 5px;
+}
+
+.bx {
+    font-size: 1.1rem;
+}
+
+.dropdown-menu {
+    position: absolute;
+    width: 250px;
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
+    margin-top: 0.3rem;
+    background: white;
+}
+
+.dropdown-menu a {
+    display: flex;
+    align-items: center;
+    column-gap: var(--gap);
+    padding: 0.8rem 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-menu a:hover {
+    background: var(--color);
+    color: white;
+}
+
+
 
 .search-container {
     display: flex;
@@ -191,6 +238,3 @@
     flex-direction: column;
 }
 
-body{
-    font-family: Roboto;
-}
