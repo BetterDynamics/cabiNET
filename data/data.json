@@ -1,57 +1,6 @@
 {
-    "folders": [
-      {
-        "id": "uuid-folder-1",
-        "name": "Technology", 
-        "createdAt": "2024-11-28T12:00:00Z",
-        "updatedAt": "2024-11-28T12:00:00Z",
-        "source": "automatic", 
-        "parentFolderId": null,
-        "bookmarks": [
-          {
-            "id": "uuid-bookmark-1",
-            "url": "https://example.com",
-            "title": "Example Website",
-            "notes": "This is a sample note for the bookmark.",
-            "createdAt": "2024-11-28T12:00:00Z",
-            "updatedAt": "2024-11-28T12:00:00Z",
-            "tags": ["technology", "web development"],
-            "favorite": false
-          },
-          {
-            "id": "uuid-bookmark-2",
-            "url": "https://example-tech.com",
-            "title": "Tech Blog",
-            "notes": "Tech innovations for 2024.",
-            "createdAt": "2024-11-28T12:10:00Z",
-            "updatedAt": "2024-11-28T12:10:00Z",
-            "tags": ["technology", "innovation"],
-            "favorite": true
-          }
-        ],
-        "subfolders": [
-          {
-            "id": "uuid-folder-2",
-            "name": "Web Development",
-            "createdAt": "2024-11-28T12:30:00Z",
-            "updatedAt": "2024-11-28T12:30:00Z",
-            "source": "manual",
-            "parentFolderId": "uuid-folder-1",
-            "bookmarks": [],
-            "subfolders": []
-          }
-        ]
-      },
-      {
-        "id": "uuid-folder-3",
-        "name": "Personal",
-        "createdAt": "2024-11-28T13:00:00Z",
-        "updatedAt": "2024-11-28T13:00:00Z",
-        "source": "manual",
-        "parentFolderId": null,
-        "bookmarks": [],
-        "subfolders": []
-      }
-    ]
+  "Bookmarks": {
+    "Bookmark bar": {}
   }
+}
   

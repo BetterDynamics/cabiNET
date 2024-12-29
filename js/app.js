@@ -15,21 +15,19 @@ function updateActivePage(pageId) {
         document.querySelector('#calendar-content').classList.remove('active');
     }
 
-    if (pageId === 'bookmark') {
-        document.querySelector('#bookmark-content').classList.add('active');
+    if (pageId === 'bookmarks') {
+        document.querySelector('#bookmarks').classList.add('active');
     } else {
-        document.querySelector('#bookmark-content').classList.remove('active');
+        document.querySelector('#bookmarks').classList.remove('active');
     }
 
-    document.querySelector('#bookmark-content').classList.toggle('active', pageId === 'bookmarks');
-    document.querySelector('#folder').classList.toggle('active', pageId === 'folder');
-
-    if (pageId === 'folder') {
-        document.querySelector('#bookmarks').classList.add('active') && document.querySelector('#folder').classList.add('active');
+    if (pageId === 'architecture') {
+        document.querySelector('#bookmarks').classList.add('active');
+    } else {
+        document.querySelector('#architecture').classList.remove('active');
     }
-    else {
-        document.querySelector('#bookmarks').classList.remove('active') && document.querySelector('#folder').classList.remove('active');
-    }
+    
+    
 }
 
         // Add click event listener to each nav icon

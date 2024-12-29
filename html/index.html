@@ -16,7 +16,7 @@
         <!-- First Row: Header with logo and search bar -->
         <div class="header">
             <div class="logo">
-                <img src="../assets/logo.png" width="150px" alt="Research Assistant">
+                <a href="#home"><img src="../assets/logo.png" width="150px" alt="Research Assistant"></a>
             </div>
             <div class="search-container">
                 <form class="search-bar-form">
@@ -31,7 +31,7 @@
                 </form>
             </div>
             <div class="docs">
-                <a href=#docs"></a><img src="../assets/docs.png" class="docs-icon" title="docs"></a>
+                <a href="#docs"><img src="../assets/docs.png" class="docs-icon" title="docs"></a>
             </div>
             <div class="profile-dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
@@ -88,7 +88,7 @@
                     <h5>Home</h5>
                     <p>This is your home page</p>
                 </div>
-                <div id="bookmarks" class="page-content">
+                <div id="bookmarks" class="page-content active">
                     <h5>Bookmarks</h5>
 
                     <div class="bookmark-form mb-3">
@@ -98,49 +98,21 @@
                                 <i class="bi bi-save"></i> Save
                             </button>
                         </div>
-                        <div id=""bookmarkError" class="text-danger mt-2"></div>
+                        <div id="bookmarkError" class="text-danger mt-2"></div>
+                        <div>
+                            <a href="#architecture"><img src="../assets/folder.png" class="nav-icon" data-page="architecture" title="Architecture">Architecture</a>
+                        </div>
+                        <div>
+                            <a href="#design"><img src="../assets/folder.png" class="nav-icon" data-page="folder" title="Design">Design</a>
+                        </div>
+                        <div>
+                            <a href="#technology"><img src="../assets/folder.png" class="nav-icon" data-page="folder" title="Technology">Technology</a>     
+                        </div>
+                        <div>
+                            <a href="#science"><img src="../assets/folder.png" class="nav-icon" data-page="folder" title="Science">Science</a>
+                        </div>
                     </div>
-
-                    <ul class="sub-nav-tree" id="bookmarkCategries">
-                        <li>All Bookmarks</li>
-                        <li>
-                            <a href="#folder"></a><img src="../assets/folder.png" class="nav-icon" data-page="folder"></a>
-                            <span>Architecture</span>
-                        </li>
-                        <li>
-                            <img id ="art" src="../assets/folder.png" class="nav-icon">
-                            <span>Art</span>
-                            <ul>
-                                <li>
-                                    <img src="../assets/folder.png" class="nav-icon">
-                                    <span>Painting</span>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <img src="../assets/folder.png" class="nav-icon">
-                            <span>Business</span>
-                        </li>
-                        <li>
-                            <img src="../assets/folder.png" class="nav-icon">
-                            <span>Design</span>
-                        </li>
-                        <li>
-                            <img src="../assets/folder.png" class="nav-icon">
-                            <span>Development</span>
-                        </li>
-                        <li>
-                            <img src="../assets/folder.png" class="nav-icon">
-                            <span>Education</span>
-                        </li>
-                        <li>
-                            <img src="../assets/folder.png" class="nav-icon">
-                            <span>Engineering</span>
-                        </li>
-                    </ul>
-                </div>          
-
-
+                </div>
                 <div id="notes" class="page-content">
                     <h5>Notes</h5>
                     <img src="../assets/notes2.png" class="nav-icon">
@@ -150,10 +122,25 @@
                     <h5>Projects</h5>
                     <p>Projects you are working on</p>
                 </div>
+                <div id="docs" class="page-content">
+                    <h5>Documentation</h5>
+                    <p>
+                        Read on how to use our bookmark software and the ways you can make your saving history more efficient.
+                    </p>
+                    <a href="#documentation">Bookmark Classification</a>
+                </div>
                 <div id="calendar" class="page-content">
                     <h5>Calendar</h5>
                     <p>Calendar view of your schedule</p>
+                </div> 
+                <div id="help" class="page-content">
+                    <h5>Help</h5>
+                    <p>Help and support</p>
                 </div>
+                <div id="trash" class="page-content">
+                    <h5>Trash</h5>
+                    <p>Deleted items</p>
+                </div>           
             </div>
 
             <!-- Column 3: Content pane (Summary and highlights) -->
@@ -182,28 +169,20 @@
                     </div>
                 </div>
 
-                <div class="page-content active" id="folder">
+                <div class="page-content active" id="architecture">
                     <h5>Architecture</h5>
-                    <div class="bookmark-list" id="bookmarkList">
-                        <div class="bookmark-item">
-                            <ul class="sub-bookmark-content" id="bookmarkCategries">
-                                <li>
-                                    <a href="#folder"></a><img id="folder" src="../assets/folder.png" class="nav-icon" data-page="folder"></a>
-                                    <span>Architecture</span>
-                                </li>
+                        <div class="bookmark-items">
+                                <div>
+                                    <a href="#structural-history"><img id="folder" src="../assets/folder.png" class="nav-icon" data-page="folder">Structural History</a>
+                                </div>
                                 <li>
                                     <img id ="folder" src="../assets/folder.png" class="nav-icon">
-                                    <span>Architecture</span>
+                                    <span>Interior Design</span>
                                     <ul>
                                         <li>
                                             <img src="../assets/folder.png" class="nav-icon">
                                             <span>Painting</span>
                                         </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    
-                            </ul>
                         </div>
                     </div>
                 </div>   

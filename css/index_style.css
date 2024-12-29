@@ -24,6 +24,7 @@
     height: 30px;
     border-radius: 30%;
     margin-right: 100px;
+    position: relative;
 }
 
 .search-container {
@@ -175,6 +176,7 @@
     background-color: white;
     color:#121826;
     margin-left: 20px;
+    margin-top: 20px;
 }
 
 .sidebar {
