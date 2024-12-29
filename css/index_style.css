@@ -72,8 +72,6 @@ body{
     color: white;
 }
 
-
-
 .search-container {
     display: flex;
     position: relative; 
@@ -137,6 +135,26 @@ body{
     height: 30px;
     border-radius: 30%;
     margin-bottom: 10px;
+}
+
+.btn-secondary {
+    background-color: #121826;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.dropdown-toggle.show::after {
+    transform: rotate(180deg);
+    transition: 0.2s ease;
+}
+
+.dropdown-toggle::after {
+    transition: transform 0.2s ease;
 }
 
 .profile-icon .dropdown-menu{
