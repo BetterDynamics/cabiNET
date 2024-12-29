@@ -38,8 +38,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: "Inter", roboto;
-    --shadow: rgba(0, 0, 0, 0.5) 0px 6px 10px 0px;
-        rgba(0, 0, 0, 0.01) 0px 1px 1px 0px;
+    --shadow: rgba(0, 0, 0, 0.5) 0px 6px 10px 0px, rgba(0, 0, 0, 0.01) 0px 1px 1px 0px;
     --color: lightblue;
     --gap: 0.5rem;
     --radius: 5px;
