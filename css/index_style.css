@@ -20,14 +20,15 @@ body{
     padding: 10px 20px;
 }
 
-.btn  {
+
+.btn-secondary {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 50px;
     height: 35px;
     padding: 0.25rem;
-    
+    margin-bottom: 0.5rem;
 }
 
 .logo{
@@ -136,11 +137,14 @@ a {
     max-width: 100%;
     font-family: Roboto;
 }
+
 .form-control{
     color: #B9B9B9; /* Text color */
     background-color: #252B37;
-    border-width: 0px;
+    border-width: 0;
+    border-radius: 0.5rem
 }
+
 .input-group .form-control {
     color: #B9B9B9;
 }
@@ -197,6 +201,8 @@ a {
     font-size: 16px;
     margin-top: 10px;
 }
+
+
 
 .dropdown-toggle.show::after {
     transform: rotate(180deg);
