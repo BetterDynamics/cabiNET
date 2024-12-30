@@ -19,8 +19,33 @@ body{
     color: white;
     padding: 10px 20px;
 }
+
+.btn  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 35px;
+    padding: 0.25rem;
+    
+}
+
 .logo{
-    margin-right: auto;
+    display: flex;
+    align-items: center;
+    gap: 1px
+}
+
+.cabinet-logo{
+    width: auto;
+    height: 40px;
+}
+
+.cabinet-title {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-transform: none;
 }
 
 .docs-icon{
@@ -159,7 +184,7 @@ a {
     width: 30px;
     height: 30px;
     border-radius: 30%;
-    margin-bottom: 10px;
+    margin-bottom: 4px;
 }
 
 .btn-secondary {
