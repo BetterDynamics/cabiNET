@@ -23,6 +23,18 @@ body {
     gap: 1rem;
 }
 
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    border-right: solid 1px #121826;
+}
+
+.logo-text {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #121826;
+}
+
 .main-content {
     flex: 1;
     display: flex;

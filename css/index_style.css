@@ -1,6 +1,7 @@
 /* Main Grid Container */
 body{
     font-family: Roboto;
+    background-color: #f5f5f5;
 }
 
 .grid-container {
@@ -49,11 +50,19 @@ body{
     text-transform: none;
 }
 
-.docs-icon{
-    width: 30px;
-    height: 30px;
+.write-docs-icon {
+    width: 25px;
+    height: 25px;
     border-radius: 30%;
-    margin-right: 100px;
+    margin-right: 30px;
+    position: relative;
+}
+
+.docs-icon{
+    width: 25px;
+    height: 25px;
+    border-radius: 30%;
+    margin-right: 30px;
     position: relative;
 }
 
@@ -177,7 +186,7 @@ a {
 
 /* Styling for individual columns */
 .nav-bar {
-    background-color: #F9FAFC;
+    background-color: #f5f5f5;
     color: white;
     border-right: 1px solid #AEAEAE;
     align-items: center;
@@ -272,12 +281,12 @@ a {
 
 /*Sub navigation styling*/
 .sub-nav-bar {
-    background-color: #F9FAFC;
+    background-color: #f5f5f5;
     color: #222530;
-    margin-top: 20px;
     margin-left: 10px;
     padding: 10px;
     border-color:#121826;
+    border-right: 1px solid #AEAEAE;
 }
 .sub-nav-header{
     color: #81858B;
@@ -294,7 +303,7 @@ a {
     width: 20px;
 }
 .content-pane {
-    background-color: white;
+    background-color: #f5f5f5;
     color:#121826;
     margin-left: 20px;
     margin-top: 20px;
