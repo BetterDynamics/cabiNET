@@ -53,11 +53,13 @@ body {
     text-align: left;
     gap: 1rem;
     padding: 1rem;
-    max-width: 600px;
 }
+
+
 
 .sub-content p {
     font-size: 1.5rem;
+    max-width: 400px;
 }
 
 .login-container {
