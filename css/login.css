@@ -65,3 +65,17 @@ body {
     padding: 40px;
     border-radius: 10px;
 }
+
+.btn-primary {
+    width: 325px;
+}
+
+.bottom-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 2rem;
+}
