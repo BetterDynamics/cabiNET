@@ -3,10 +3,7 @@
 class BookmarkManager {
     constructor() {
         this.bookmarks = JSON.parse(localStorage.getItem('bookmarks')) || {};
-        this.categories = JSON.parse(localStorage.getItem('categories')) || [
-            'Architecture', 'Art', 'Business', 'Design', 
-            'Development', 'Education', 'Engineering'
-        ];
+        this.categories = JSON.parse(localStorage.getItem('categories')) || {};
         
         this.initializeElements();
         this.bindEvents();
