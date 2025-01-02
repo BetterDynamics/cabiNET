@@ -43,6 +43,9 @@
                     <img src="assets/profile(2).png" class="profile-icon" title="profile">
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a href="#user"></a>
+                            
+                    </a>
                     <a href='login.html'>
                         <i class="bx bx-log-in"></i> Login
                     </a>
@@ -73,7 +76,7 @@
             </div>
         </div>
 
-        <!-- Second Row: Main content (4 columns, 3 resizable) -->
+        <!--Main content (4 columns, 3 resizable) -->
         <div class="main-content">
             <!-- Column 1: Main navigation -->
             <div class="column nav-bar">
@@ -81,23 +84,17 @@
                     <a href="#home"><img src="assets/home.png" class="nav-icon" title="Home" data-page="home"></a>
                     <a href="#bookmarks"><img src="assets/bookmark.png" class="nav-icon" title="Bookmarks" data-page="bookmarks"></a>
                     <a href="#notes"><img src="assets/notes.png" class="nav-icon" title="Notes" data-page="notes"></a>
+                    <a href="#documents"><img src="assets/documents.png" class="nav-icon" title="Documents" data-page="documents"></a>
                     <a href="#projects"><img src="assets/projects.png" class="nav-icon" title="Projects" data-page="projects"></a>
                 </div>
                 <div class="sub-nav-menu">
-                    <!--<a href="https://www.freepik.com/icon/agenda_15647313#fromView=search&page=1&position=20&uuid=b0bfd8ae-6357-4432-9c3c-0ccde2adbef2">Icon by improstudio</a>-->
-                    <a href="#calendar"><img src="assets/calendar.png" class="nav-icon" title="Calendar" data-page="calendar"></a>
-                    <!--<a href="https://www.freepik.com/search">Icon by Freepik</a>__-->
                     <a href="#help"><img src="assets/help.png" class="nav-icon" title="Help" data-page="help"></a>
                     <a href="#trash"><img src="assets/trash.png" class="nav-icon" title="Trash" data-page="trash"></a>
                 </div>
             </div>
 
             <!-- Column 2: Sub-navigation (Bookmark structure, etc.) -->
-            <div class="sub-nav-bar">
-                <div id="home" class="page-content active">
-                    <h5>Home</h5>
-                    <p>This is your home page</p>
-                </div>
+            <div class="sub-nav-bar hidden">
                 <div id="bookmarks" class="page-content active">
                     <h5>Bookmarks</h5>
 
@@ -133,10 +130,7 @@
                         <a href="#documentation" id="doc-nav">Bookmark Classification</a>
                     </div>
                 </div>
-                <div id="calendar" class="page-content">
-                    <h5>Calendar</h5>
-                    <p>Calendar view of your schedule</p>
-                </div> 
+                
                 <div id="help" class="page-content">
                     <h5>Help</h5>
                     <p>Help and support</p>
@@ -152,27 +146,48 @@
 
             <!-- Column 3: Content pane (Summary and highlights) -->
             <div class="content-pane">
-                <div id ="calendar-content" class="page-content active">
-                    <header class="calendar-header">
-                        <p class="calendar-current-day"></p>
-                        <div class="calendar-nav">
-                            <span id="caldendar-prev" class="material-symbols-rounded">Prev</span>
-                            <span id="caldendar-next" class="material-symbols-rounded">Next</span>
-                        </div>   
-                    </header>
-                    <div class="calendar-body">
-                        <ul class="calendar-weekdays">
-                            <li>Sun</li>
-                            <li>Mon</li>
-                            <li>Tue</li>
-                            <li>Wed</li>
-                            <li>Thu</li>
-                            <li>Fri</li>
-                            <li>Sat</li>
-                        </ul>
-                        <ul class="calendar-days">
+                <div id="home" class="page-content active">
+                    <div class="home-content">
+                        <h5>Hello User!</h5>
+                        <p>Organize your bookmarks, notes, projects, and files in one place</p>
+                        <strong>Get started by creating a new bookmark</strong>
+                        <form class="save-url-form">
+                            <input type="text" class="form-control2" placeholder="Enter URL">
+                            <button type="submit" class="btn btn-primary">Save</button>
+                            <div class="extension-download">
+                                <h5>Welcome to cabiNET</h5>
+                                <strong>Download our extension</strong>
+                                <div class="extension-download">
+                                    <a href="#extension-download">
+                                        <img src="assets/logo(2).png" class="extension-icon" title="Download Extension">
+                                    </a>
+                                </div>
+                            </div>
+                    </div>
+                    
+
+                <div class="page-content active" id="bookmarks">
+                    <div class="by-date-content">
+                        <div class="by-date-dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="bookmarkSaveMenu" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span>By Date</span>
+                            </button>
+                            <div class="date-dropdown-menu" aria-labelledby="dropdownMenuButton" id="bookmarks">
+                                <a href="#today">
+                                    <i class="bx bx-calendar"></i> Today
+                                </a>
+                                <a href="#yesterday">
+                                    <i class="bx bx-calendar"></i> Yesterday
+                                </a>
+                                <a href="#last-week">
+                                    <i class="bx bx-calendar"></i> Last Week
+                                </a>
+                                <a href="#last-month">
+                                    <i class="bx bx-calendar"></i> Last Month
+                                </a>
+                            </div>
+                        </div>
             
-                        </ul>
                     </div>
                 </div>
 
@@ -183,7 +198,8 @@
                                 <a href="#structural-history"><img id="folder" src="assets/folder.png" class="nav-icon" data-page="folder">Structural History</a>
                             </div>
                         </div>
-                    </div>
+                </div>
+                
                 <div class="page-content active" id="design">
                     <h5>Design</h5>
                     <div class="bookmark-items">
