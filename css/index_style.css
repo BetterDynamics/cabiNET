@@ -2,6 +2,7 @@
 body{
     font-family: Roboto;
     background-color: #f5f5f5;
+    color: #37352F;
 }
 
 .grid-container {
@@ -68,10 +69,20 @@ body{
 
 a {
     text-decoration: none;
-    color: black;
+    color: #37352F;
     padding: 4px 8px;
     border-radius: 6px;
     transition: background-color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    background-color: lightblue;
+    color: white;
+}
+
+.sub-nav-menu a:hover {
+    background-color: lightblue;
+    color: white;
 }
 
 .docs-items {
@@ -124,7 +135,7 @@ a {
     column-gap: var(--gap);
     padding: 0.8rem 1rem;
     text-decoration: none;
-    color: black;
+    color: #37352F;;
 }
 
 .dropdown-menu a:hover {
@@ -195,7 +206,6 @@ a {
     height: 100%;
     overflow: hidden;
     font-family: Roboto;
-
 }
 
 .column {
@@ -260,7 +270,6 @@ a {
     background-color: #F9FAFC;
 }
 
-
 .nav-icon{
     width: 30px;
     border: #BBBBBB solid 1px;
@@ -268,9 +277,23 @@ a {
     padding: 5px;
     border: none;
 }
+
 .nav-icon.bookmark{
     height: 32px;
 }
+
+.nav-icon:hover{
+    background-color: lightblue;
+    color: white;
+}
+
+.nav-button:hover {
+    background-color: lightblue;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
 .nav-icon:active{
     background-color: #121826;
 }
@@ -288,6 +311,7 @@ a {
     flex-direction: column; /* Ensures that elements stack vertically */
     justify-content: center; /* Centers the items vertically */
     align-items: center; /* Centers the items horizontally */
+    color: #37352F;
 }
 
 .nav-menu{
@@ -303,6 +327,7 @@ a {
     margin-top: 50px;
     border-top: 1px solid #AEAEAE;
     padding-top: 50px;
+    color: #37352F;
 }
 
 
@@ -331,7 +356,7 @@ a {
 }
 .content-pane {
     background-color: #f5f5f5;
-    color:#121826;
+    color: #37352F;
     margin-left: 20px;
     margin-top: 20px;
 }
