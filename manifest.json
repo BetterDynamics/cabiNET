@@ -5,15 +5,15 @@
   "description": "Manage and display bookmarks in a custom UI",
   "permissions": ["bookmarks","storage","activeTab" ],
   "action": {
-      "default_popup": "html/index.html",
-      "default_icon": "/assets/logo.png"
+      "default_popup": "popup.html",
+      "default_icon": "/assets/logo(2).png"
   },
   "background": {
-      "service_worker": "js/app.js"
+      "service_worker": "src/background.js"
   },
   "web_accessible_resources": [
       {
-        "resources": ["html/index.html", "js/index.js", "css/style.css", "js/database.js", "js/bookmarks.js", "js/sync.js"],
+        "resources": ["popup.html", "js/index.js", "css/index_style.css", "js/database.js", "js/bookmarks.js", "js/sync.js"],
         "matches": ["<all_urls>"]
       }
   ]
