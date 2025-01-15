@@ -81,3 +81,50 @@ body {
     color: white;
     margin-top: 2rem;
 }
+
+.google-btn {
+    width: 325px;
+    background-color: white;
+    color: #121826;
+    border: 1px solid #e0e0e0;
+    padding: 8px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.google-btn:hover {
+    background-color: #f5f5f5;
+}
+
+.google-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    margin: 20px 0;
+    width: 325px;
+}
+
+.separator::before,
+.separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #ffffff;
+}
+
+.separator span{
+    padding: 0 10px;
+    color: #ffffff;
+    font-size: 14px;
+}
