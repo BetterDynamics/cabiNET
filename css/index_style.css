@@ -339,6 +339,8 @@ a {
     padding: 10px;
     border-color:#121826;
     border-right: 1px solid #AEAEAE;
+    display: flex;
+    flex-direction: column;
 }
 .sub-nav-header{
     color: #81858B;
